@@ -1,4 +1,4 @@
 library(testthat)
-library(news)
+library(pkgnews)
 
-test_check("news")
+test_check("pkgnews")

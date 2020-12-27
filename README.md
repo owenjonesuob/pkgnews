@@ -1,10 +1,10 @@
 
-# news: Retrieve R Package News Files
+# pkgnews: Retrieve R Package News Files
 
 <!-- badges: start -->
-[![CRAN status](https:e//www.r-pkg.org/badges/version/news)](https://CRAN.R-project.org/package=news)
-[![R build status](https://github.com/owenjonesuob/news/workflows/R-CMD-check/badge.svg)](https://github.com/owenjonesuob/news/actions)
-[![Codecov test coverage](https://codecov.io/gh/owenjonesuob/news/branch/master/graph/badge.svg)](https://codecov.io/gh/owenjonesuob/news?branch=master)
+[![CRAN status](https:e//www.r-pkg.org/badges/version/pkgnews)](https://CRAN.R-project.org/package=pkgnews)
+[![R build status](https://github.com/owenjonesuob/pkgnews/workflows/R-CMD-check/badge.svg)](https://github.com/owenjonesuob/pkgnews/actions)
+[![Codecov test coverage](https://codecov.io/gh/owenjonesuob/pkgnews/branch/master/graph/badge.svg)](https://codecov.io/gh/owenjonesuob/pkgnews?branch=master)
 <!-- badges: end -->
 
 Read R package news files, regardless of whether or not the package is currently installed, into your R session as a character vector.
@@ -15,7 +15,7 @@ Read R package news files, regardless of whether or not the package is currently
 You can install the latest version from GitHub using:
 
 ```r
-remotes::install_github("owenjonesuob/news")
+remotes::install_github("owenjonesuob/pkgnews")
 ```
 
 
@@ -24,7 +24,7 @@ remotes::install_github("owenjonesuob/news")
 The package only contains one exported function, [`news()`](R/news.R), which can be used to retrieve the news for a specified package:
 
 ```r
-library(news)
+library(pkgnews)
 news("news")
 ```
 

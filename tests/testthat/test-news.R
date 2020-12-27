@@ -1,7 +1,7 @@
 test_that("installed", {
 
   expect_equal(
-    tail(news("news", installed_only = TRUE), 1),
+    tail(news("pkgnews", installed_only = TRUE), 1),
     "- First development release of the package."
   )
 

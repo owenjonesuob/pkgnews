@@ -12,7 +12,8 @@
 #'   (or possibly the ChangeLog file, if `allow_changelog = TRUE`). An error is
 #'   thrown if no news could be found.
 #'
-#' @examples news("news")
+#' @examples
+#'   \dontrun{news("pkgnews")}
 #'
 #' @export
 

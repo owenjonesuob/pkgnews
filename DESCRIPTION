@@ -1,4 +1,4 @@
-Package: news
+Package: pkgnews
 Type: Package
 Title: Retrieve R Package News Files
 Version: 0.0.1
@@ -8,7 +8,9 @@ Description: Read R package news files, regardless of whether or not the package
 Imports:
   utils
 Suggests:
+  commonmark,
   httr,
+  xml2,
   covr,
   testthat
 SystemRequirements:
