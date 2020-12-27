@@ -1,0 +1,20 @@
+Package: news
+Type: Package
+Title: Retrieve R Package News Files
+Version: 0.0.1
+Authors@R: person("Owen", "Jones", email = "owenjonesuob@gmail.com", role = c("aut", "cre"))
+Description: Read R package news files, regardless of whether or not the package
+  is installed.
+Imports:
+  utils
+Suggests:
+  httr,
+  covr,
+  testthat
+SystemRequirements:
+  pandoc
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Roxygen: list(markdown = TRUE)
