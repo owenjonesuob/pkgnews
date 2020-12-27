@@ -29,7 +29,14 @@ news <- function(package, installed_only = FALSE, allow_changelog = TRUE, width 
     )
 
   # If none of those worked, then we didn't manage to find a news file :(
-  stop(sprintf("No news found for package '%s'", package))
+  stop(
+    sprintf("No news found for package '%s'", package),
+    if (!nzchar(Sys.which("pandoc"))) paste0(
+      "... although, it looks like `pandoc` isn't on your PATH, ",
+      "and we need it to convert HTML news files to markdown. ",
+      "So it might be worth making sure `pandoc` is available, and trying again!"
+    )
+  )
 }
 
 

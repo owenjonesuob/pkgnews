@@ -18,23 +18,6 @@ test_that("web", {
 
   skip_if_offline()
 
-  # Try a few CRAN packages
-  expect_equal(
-    tail(news("dplyr"), 1),
-    "download size from 2.8 MB to 0.5 MB."
-  )
-
-  expect_equal(
-    tail(news("checkLuhn"), 1),
-    "-   First release"
-  )
-
-  expect_equal(
-    tail(news("goodpractice"), 1),
-    "First public release."
-  )
-
-
 
   # This one doesn't have a NEWS file or changelog
   expect_error(
@@ -67,5 +50,26 @@ test_that("web", {
     tail(news("KEGGREST"), 1),
     "o Package introduced."
   )
+
+
+
+  # Try a few CRAN packages
+  skip_if(!nzchar(Sys.which("pandoc")))
+
+  expect_equal(
+    tail(news("dplyr"), 1),
+    "download size from 2.8 MB to 0.5 MB."
+  )
+
+  expect_equal(
+    tail(news("checkLuhn"), 1),
+    "-   First release"
+  )
+
+  expect_equal(
+    tail(news("goodpractice"), 1),
+    "First public release."
+  )
+
 
 })
