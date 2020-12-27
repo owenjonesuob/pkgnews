@@ -12,7 +12,14 @@ Read R package news files, regardless of whether or not the package is currently
 
 ## Installation
 
-You can install the latest version from GitHub using:
+You can install the released version from CRAN using:
+
+```r
+install.packages("pkgnews")
+```
+
+
+Alternatively, you can install the latest version from GitHub using:
 
 ```r
 remotes::install_github("owenjonesuob/pkgnews")

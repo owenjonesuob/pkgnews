@@ -56,18 +56,20 @@ test_that("web", {
   # Try a few CRAN packages
   skip_if(!nzchar(Sys.which("pandoc")))
 
-  expect_equal(
-    tail(news("dplyr"), 1),
-    "download size from 2.8 MB to 0.5 MB."
+  expect_match(
+    # Drop zero-length elements with Filter(), in particular the last empty line!
+    tail(Filter(length, news("dplyr")), 1),
+    "download size from 2.8 MB to 0.5 MB.",
+    fixed = TRUE
   )
 
   expect_equal(
-    tail(news("checkLuhn"), 1),
+    tail(Filter(length, news("checkLuhn")), 1),
     "-   First release"
   )
 
   expect_equal(
-    tail(news("goodpractice"), 1),
+    tail(Filter(length, news("goodpractice")), 1),
     "First public release."
   )
 
