@@ -58,18 +58,18 @@ test_that("web", {
 
   expect_match(
     # Drop zero-length elements with Filter(), in particular the last empty line!
-    tail(Filter(length, news("dplyr")), 1),
+    tail(Filter(nzchar, news("dplyr")), 1),
     "download size from 2.8 MB to 0.5 MB.",
     fixed = TRUE
   )
 
   expect_equal(
-    tail(Filter(length, news("checkLuhn")), 1),
+    tail(Filter(nzchar, news("checkLuhn")), 1),
     "-   First release"
   )
 
   expect_equal(
-    tail(Filter(length, news("goodpractice")), 1),
+    tail(Filter(nzchar, news("goodpractice")), 1),
     "First public release."
   )
 
