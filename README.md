@@ -4,7 +4,7 @@
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/pkgnews)](https://CRAN.R-project.org/package=pkgnews)
 [![R build status](https://github.com/owenjonesuob/pkgnews/workflows/R-CMD-check/badge.svg)](https://github.com/owenjonesuob/pkgnews/actions)
-[![Codecov test coverage](https://codecov.io/gh/owenjonesuob/pkgnews/branch/master/graph/badge.svg)](https://codecov.io/gh/owenjonesuob/pkgnews?branch=master)
+[![Codecov test coverage](https://codecov.io/gh/owenjonesuob/pkgnews/branch/main/graph/badge.svg)](https://codecov.io/gh/owenjonesuob/pkgnews?branch=main)
 <!-- badges: end -->
 
 Read R package news files, regardless of whether or not the package is currently installed, into your R session as a character vector.
