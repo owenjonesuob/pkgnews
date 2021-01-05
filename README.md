@@ -2,7 +2,7 @@
 # pkgnews: Retrieve R Package News Files
 
 <!-- badges: start -->
-[![CRAN status](https:e//www.r-pkg.org/badges/version/pkgnews)](https://CRAN.R-project.org/package=pkgnews)
+[![CRAN status](https://www.r-pkg.org/badges/version/pkgnews)](https://CRAN.R-project.org/package=pkgnews)
 [![R build status](https://github.com/owenjonesuob/pkgnews/workflows/R-CMD-check/badge.svg)](https://github.com/owenjonesuob/pkgnews/actions)
 [![Codecov test coverage](https://codecov.io/gh/owenjonesuob/pkgnews/branch/master/graph/badge.svg)](https://codecov.io/gh/owenjonesuob/pkgnews?branch=master)
 <!-- badges: end -->
