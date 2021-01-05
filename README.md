@@ -32,7 +32,7 @@ The package only contains one exported function, [`news()`](R/news.R), which can
 
 ```r
 library(pkgnews)
-news("news")
+news("pkgnews")
 ```
 
 Note that the package doesn't need to be installed - though an internet connection must be available if that's the case.
