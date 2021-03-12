@@ -1,7 +1,8 @@
 Package: pkgnews
 Type: Package
 Title: Retrieve R Package News Files
-Version: 0.0.1
+Version: 0.0.2
+Date: 2021-03-12
 Authors@R: person("Owen", "Jones", email = "owenjonesuob@gmail.com", role = c("aut", "cre"))
 Description: Read R package news files, regardless of whether or not the package
   is installed.

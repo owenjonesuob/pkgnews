@@ -10,4 +10,9 @@
 
 0 errors | 0 warnings | 1 note
 
-* This is a new submission.
+* Package was archived on CRAN
+  CRAN repository db overrides:
+    X-CRAN-Comment: Archived on 2021-02-10 as check problems were not
+      corrected in time.
+
+Several failing unit tests have now been remedied.

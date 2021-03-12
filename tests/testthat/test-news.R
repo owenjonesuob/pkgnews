@@ -1,8 +1,9 @@
 test_that("installed", {
 
-  expect_equal(
+  expect_match(
     tail(news("pkgnews", installed_only = TRUE), 1),
-    "- First development release of the package."
+    "First development release of the package.",
+    fixed = TRUE
   )
 
   expect_error(
@@ -41,14 +42,16 @@ test_that("web", {
 
 
   # Try a couple of Bioconductor packages
-  expect_equal(
+  expect_match(
     tail(news("affy"), 1),
-    "o extensive set of tests in the directory 'tests/'"
+    "extensive set of tests in the directory 'tests/'",
+    fixed = TRUE
   )
 
-  expect_equal(
+  expect_match(
     tail(news("KEGGREST"), 1),
-    "o Package introduced."
+    "Package introduced.",
+    fixed = TRUE
   )
 
 
@@ -63,14 +66,16 @@ test_that("web", {
     fixed = TRUE
   )
 
-  expect_equal(
+  expect_match(
     tail(Filter(nzchar, news("checkLuhn")), 1),
-    "-   First release"
+    "First release",
+    fixed = TRUE
   )
 
-  expect_equal(
+  expect_match(
     tail(Filter(nzchar, news("goodpractice")), 1),
-    "First public release."
+    "First public release.",
+    fixed = TRUE
   )
 
 
